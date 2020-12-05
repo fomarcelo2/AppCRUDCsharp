@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="AppCRUDCsharp.App.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>App Empleados</title>
+    <link href="css/estilos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <%-- codigo html menu --%>
+        <header class="estiloHeader">
+            <nav class="menu-nav">
+                <ul class="menuUl">
+                    <li class="menuLi"><a class="menuLink" href="./Default.aspx">Home</a></li>
+                    <li class="menuLi"><a class="menuLink" href="./Datos.aspx">Datos</a></li>
+                    <li class="menuLi"><a class="menuLink" href="./Formulario.aspx">Formulario</a></li>
+                    <li class="menuLi"><a class="menuLink" href="./Nosotros.aspx">Nosotros</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <%-- codigo html menu --%>
+        
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </div>
+        <%-- footer --%>
+        <footer class="estiloFooter">
+            <h3 class="textoFooter">by: Fredy Marcelo</h3>
+            <div class="contenedorGit">
+                <div>
+                    <a href="https://github.com/fomarcelo2">
+                        <img class="ico" src="img/logoGithub.png" height="30px" alt="" ></a>
+                </div>
+                <div><small>@fomarcelo2</small></div>
+            </div>
+        </footer>
+
+        <%-- footer --%>
+    </form>
+</body>
+</html>
